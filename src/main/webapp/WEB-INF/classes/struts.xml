@@ -4,8 +4,9 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
     <package name="basicstruts" extends="struts-default">
-        <action name="index">
-            <result>index.jsp</result>
+        <!--show是ProductAction里面的方法，访问的是http://localhost:8080/struts2/showProduct界面-->
+        <action name="showProduct" class="ProductAction" method="show">
+            <result name="show">show.jsp</result>
         </action>
     </package>
 </struts>

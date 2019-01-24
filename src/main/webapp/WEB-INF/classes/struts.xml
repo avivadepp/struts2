@@ -8,5 +8,10 @@
         <action name="showProduct" class="ProductAction" method="show">
             <result name="show">show.jsp</result>
         </action>
+
+        <!--访问http://localhost:8080/struts2/addProduct.jsp并提交数据-->
+        <action name="addProduct" class="ProductAction" method="add">
+            <result name="show">show.jsp</result>
+    </action>
     </package>
 </struts>

@@ -14,6 +14,11 @@ public class ProductAction {
         return "show";
     }
 
+    public String add(){
+        System.out.println("product.name:"+product.getName());
+        return "show";
+    }
+
     public Product getProduct() {
         return product;
     }
